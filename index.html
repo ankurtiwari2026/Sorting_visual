@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm Visualizer 🎨</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sorting Algorithm Visualizer 🚀</h1>
+        <p>Select an algorithm, adjust speed, and watch it in action!</p>
+        
+        <div class="controls">
+            <select id="algorithm-select">
+                <option value="bubble">Bubble Sort 🧼</option>
+                <option value="selection">Selection Sort 🔍</option>
+                <option value="insertion">Insertion Sort 📥</option>
+            </select>
+            <label for="speed-range">Speed: <span id="speed-value">1x</span></label>
+            <input type="range" id="speed-range" min="1" max="5" step="1" value="3">
+            <button onclick="startVisualization()" class="start-button">Start Sorting 🔄</button>
+        </div>
+
+        <div id="array-container" class="array-container">
+            <!-- Bars representing the array will be dynamically added here -->
+        </div>
+        
+        <div class="description" id="description">
+            <!-- Explanation of the selected algorithm will appear here -->
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
